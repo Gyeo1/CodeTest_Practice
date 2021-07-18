@@ -6,6 +6,8 @@ check=[False for i in range(N)]
 def permute(x,result):
   global N,R
   if x>=R:
+      # 쉼표로 구분하여 문자열로 결합하기 !
+      #s = ",".join(lst)
     s="".join(result)
     print(s)
   else:

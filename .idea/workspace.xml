@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="39bd73bb-119b-4b8c-9fe5-9381b2a458a6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part6(재귀 함수)/2.순열 구하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/Part6(재귀 함수)/2.순열 구하기.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,27 +170,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="778" y="349" key="EnvironmentVariablesDialog" timestamp="1626158007048">
-      <screen x="0" y="0" width="1824" height="1176" />
-    </state>
-    <state x="778" y="349" key="EnvironmentVariablesDialog/0.0.1824.1176@0.0.1824.1176" timestamp="1626158007048" />
-    <state width="1803" height="326" key="GridCell.Tab.0.bottom" timestamp="1626162916555">
-      <screen x="0" y="0" width="1824" height="1176" />
-    </state>
-    <state width="1803" height="326" key="GridCell.Tab.0.bottom/0.0.1824.1176@0.0.1824.1176" timestamp="1626162916555" />
-    <state width="1803" height="326" key="GridCell.Tab.0.center" timestamp="1626162916555">
-      <screen x="0" y="0" width="1824" height="1176" />
-    </state>
-    <state width="1803" height="326" key="GridCell.Tab.0.center/0.0.1824.1176@0.0.1824.1176" timestamp="1626162916555" />
-    <state width="1803" height="326" key="GridCell.Tab.0.left" timestamp="1626162916555">
-      <screen x="0" y="0" width="1824" height="1176" />
-    </state>
-    <state width="1803" height="326" key="GridCell.Tab.0.left/0.0.1824.1176@0.0.1824.1176" timestamp="1626162916555" />
-    <state width="1803" height="326" key="GridCell.Tab.0.right" timestamp="1626162916555">
-      <screen x="0" y="0" width="1824" height="1176" />
-    </state>
-    <state width="1803" height="326" key="GridCell.Tab.0.right/0.0.1824.1176@0.0.1824.1176" timestamp="1626162916555" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
