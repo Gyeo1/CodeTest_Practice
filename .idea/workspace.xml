@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39bd73bb-119b-4b8c-9fe5-9381b2a458a6" name="Default Changelist" comment="" />
+    <list default="true" id="39bd73bb-119b-4b8c-9fe5-9381b2a458a6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part6(재귀 함수)/예제문제_N중 for문 구현.py" beforeDir="false" afterPath="$PROJECT_DIR$/Part6(재귀 함수)/예제문제_N중 for문 구현.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +30,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Python.5.Rook">
     <configuration name="1.offset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -154,6 +159,17 @@
       <updated>1625833980117</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="778" y="349" key="EnvironmentVariablesDialog" timestamp="1626158007048">

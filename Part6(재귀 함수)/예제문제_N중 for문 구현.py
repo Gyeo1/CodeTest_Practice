@@ -4,7 +4,7 @@ n = 3
 Number = [0 for _ in range(n)]
 
 
-def EqualCheck(a, b):
+def EqualCheck(a, b):  # 현재 값 a가 이전 값b와 같은지 확인
     count = 0
     for i in range(len(b)):
         if a == b[i]:
@@ -24,4 +24,4 @@ def recursion(x, Num):  # x는 현재 n은 마지막 값
                 Num[x] = 0  # 이후의 재귀함수가 끝나면 해당 부분을 0으로 만들어줌 (이후에 다른 값 넣기 위함)
 
 
-recursion(0, Number)
+recursion(0, Number)  # 0인 이유는 행렬의 인덱스가 0부터 시작하기 때문?
