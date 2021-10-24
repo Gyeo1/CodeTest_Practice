@@ -6,4 +6,6 @@ check.sort()
 for i in range(N-1,-1,-1):
     print(check[i], end=" ")
 
-#check=sorted(check, reverse=True)로 하는 방법이 정석?
+#아래 둘처럼 하는게 정석이긴하다.
+#check=sorted(check, reverse=True)
+# check.sort(reverse=True)
