@@ -41,7 +41,7 @@
 #
 #     return answer
 #
-# test case 만 통과 ;
+
 def solution(numbers, target):
 
     answer = 0

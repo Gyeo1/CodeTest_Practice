@@ -1,7 +1,7 @@
 def solution(s):
     answer = len(s)
     for i in range(len(s)):
-        check=s[:i+1]     #확인할 리스트
+        check=s[:i+1]     #문제해석 실패 ==> 그냥 처음부터 겹치는거 확인하면 됐었다.
         count=1
         s_new=""
         for j in range(i+1,len(s),i+1):
