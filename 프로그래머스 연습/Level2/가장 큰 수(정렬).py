@@ -4,14 +4,14 @@ def solution(numbers):
         prev.append(str(numbers[i]))
 
     prev.sort(key = lambda x: (x*4)[:4], reverse = True)
-
+    print(prev)
     if prev[0] != "0":
         answer = "".join(prev)
         return answer
     else:
         return "0"
 
-numbers=[3, 30, 34, 5, 9,90,900,90]
+numbers=[3, 30, 34, 5, 9,90,99990,99]
 # print(type(solution(numbers)),solution((numbers)))
 print(solution(numbers))
 '''

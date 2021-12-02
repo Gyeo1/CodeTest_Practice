@@ -6,8 +6,8 @@ def solution(brown, yellow):
         answer=[3,3]
     else:
         while 1: #여기서 brown 갯수도 파악해줘야된다.
-            if yellow%n==0: # 2
-                if (n+2)*2+int(yellow/n)*2 ==brown:
+            if yellow%n==0:
+                if (n+2)*2+int(yellow/n)*2 ==brown:#수식으로 해결.
                     answer.append(n + 2)
                     answer.append(int(yellow/n)+2)
                     break
