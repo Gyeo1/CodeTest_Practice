@@ -11,7 +11,7 @@ def solution(clothes):
         dic[j].append(i)        #나머지 옷들은 append로 추가.
     print(dic)
     for k in dic:
-        answer*=len(dic[k])     #수식의 이해= 옷입는 경우의 수 이다.
+        answer*=len(dic[k])     #수식의 이해= 옷입는 경우의 수 이다. 안입는 경우의 수를 추가했기 때문에 그냥 다 곱하면됨
     # for i in dic.keys():
     #     check.append(dic[i])
     # # print(list(set(combinations(*check))))
