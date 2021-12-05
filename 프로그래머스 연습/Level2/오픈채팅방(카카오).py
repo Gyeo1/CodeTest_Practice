@@ -6,7 +6,7 @@ def solution(record):
     answer = []
     for i in range(len(record)):
         string = ""
-        check = record[i].split() #핵심임 split으로 명령어 id nickname을 쪼개준다.
+        check = record[i].split()               #핵심임 split으로 명령어/ id/ nickname을 쪼개준다.
         if check[0] == "Enter":
             uid_nickname[check[1]] = check[2]
             uid_list.append(check[1])
@@ -16,7 +16,7 @@ def solution(record):
             answer.append("님이 나갔습니다.")
         else:
             uid_nickname[check[1]] = check[2]
-    for i in range(len(uid_list)):  # id 리스트를 가져와서 확인
+    for i in range(len(uid_list)):              # id 리스트를 가져와서 확인 어짜피 id리스트는 E,L에서만 저장했으니 가능하다.
         nickname = uid_nickname[uid_list[i]]
         if "들어왔습니다." in answer[i]:
             answer[i] = (nickname + answer[i])
