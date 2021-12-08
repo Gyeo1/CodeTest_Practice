@@ -14,3 +14,15 @@ def solution(s):
 
 s="{{20,111},{111}}"
 solution(s)
+'''
+정규 표현식을 잘 몰라서 어렵게 풀었는데 아래처럼 축소시켜서 풀 수 있다(Counter 사용)
+def solution(s):
+
+    s = (re.findall('\d+', s))
+    print(s)
+    # return list(map(int, [k for k, v in sorted(s.items(), key=lambda x: x[1], reverse=True)]))
+
+import re
+from collections import Counter
+s="{{20,111},{111}}"
+'''
