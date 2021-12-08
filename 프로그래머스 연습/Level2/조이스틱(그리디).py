@@ -45,7 +45,8 @@ def solution(name):
     return answer
 
 
-name="AAAAZ" #7이 나와야 된다.
+name="AAAAZ"
+
 # print([0 * len(name[:5])])
 print(solution(name))
 
