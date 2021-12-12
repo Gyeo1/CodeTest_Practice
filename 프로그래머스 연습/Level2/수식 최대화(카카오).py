@@ -108,3 +108,31 @@ answer=max(check)
 print(check,answer)
 
 '''
+
+'''
+#eval로 더 간단하게 구현 가능하다
+import re #re는 정규 표현식을 쓴다는 의미
+from itertools import permutations
+expression="100-200*300-500+20"
+n_epx=[n for n in ("-","*","+") if n in expression]
+check=[]
+expression = re.split(r'(\D)',expression)
+#r'(\D)는 정규 표현식으로 숫자가 아닌것을 기준으로 split한다는 의미
+def calulate(express, priority):
+    index=0
+    while index<len(priority):
+        a=""
+        priority_index=express.index(priority[index])
+        a+=(express[priority_index-1]+priority[index]+express[priority_index+1])
+        middle=[str(eval(a))] #eval로 문자열의 수식을 계산
+        express=express[:priority_index-1]+middle+express[priority_index+2:]
+        if priority[index] not in express:
+            index+=1
+    return express
+for i in list(permutations(n_epx)):#순열로 우선순위 저장
+    ex=expression[:]
+    check+=calulate(ex,i)
+check=[abs(int(v)) for v in check]
+answer=max(check)
+print(check,answer)
+'''
