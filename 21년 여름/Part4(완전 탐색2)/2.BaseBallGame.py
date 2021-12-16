@@ -18,6 +18,9 @@ if 1 <= N <= 100:
         one.append(n % 100 % 10)
         strike.append(s)
         ball.append(b)
+    print(hun)
+    print(ten)
+    print(one)
     for i in range(1, 10):
         for j in range(1, 10):
             for k in range(1, 10):
