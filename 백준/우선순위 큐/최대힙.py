@@ -9,6 +9,7 @@ for _ in range(N):
 for i in list_1:
     if i !=0:
         heapq.heappush(heap,-i)
+        #heapq는 원래 최소 힙만 지원해줌. 우선순위가 정수! 임을 생각해 -를 붙여주면 최대힙이 된다.
         continue
     if len(heap)!=0:
         print(-heapq.heappop(heap))
