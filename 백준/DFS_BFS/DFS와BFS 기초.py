@@ -43,12 +43,42 @@ def bfs(graph,idx,visited):
         check.sort()
         queue.extend(check)
 
-
-
-
-#
 visited=[False]*(nord+1)
 dfs(graph,start,visited)
 print()
 visited=[False]*(nord+1)
 bfs(graph,start,visited)
+
+
+# #아래는 BFS를 더 쉽게 하는 방법임!!
+# from collections import deque
+# import sys
+# input=sys.stdin.readline
+# def bfs(graph): #걍 첫번째 노드를 1이라 생각하자.
+#     queue=deque()
+#     queue.append(3)
+#     visited=[False]*(node+1)
+#     while queue:
+#         idx=queue.popleft()
+#         print(idx,end=" ")
+#         visited[idx]=True
+#         for i in range(len(graph[idx])):
+#             if graph[idx][i]==1 and visited[i]==False:
+#                 queue.append(i)
+#                 visited[i]=True
+#
+#
+#
+#     # return
+#
+# node,lines=input().split()
+# node=int(node)
+# lines=int(lines)
+# graph=[[0]*(node+1) for _ in range(node+1)]#이거랑
+# for i in range(lines):
+#     a,b=map(int,input().split())
+#     graph[a][b]=graph[b][a]=1 #이게 핵심임 그냥
+# #코드의 해석: 일단 graph를 node갯수 +1 개 만큼 만듬 이때 graph[0]은 안쓰기 때문에 +1개만큼만듬
+# #간선의 정보를 입력받음 a,b로 받고 graph의 [a][b]를 1로 만든다 이때 1은 그냥 둘이 이어져있다는 것을 의미함
+#
+# bfs(graph)
