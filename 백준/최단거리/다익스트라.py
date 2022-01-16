@@ -31,6 +31,7 @@ for _ in range(lines):
     grape[node1].append([node2,weigth]) #인접 리스트에 노드와 가중치 값을 넣는다.
 #start_point 기점으로 전체 가중치 구하기
 answer=find_weigth(start_point,grape)
+# print(answer[node])
 # print(grape)
 for i in range(1,len(answer)):
     if answer[i] == INF:
