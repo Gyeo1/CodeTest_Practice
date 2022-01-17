@@ -9,11 +9,11 @@ INF=int(1e9)
 for _ in range(bus):
     node1, node2, cost= map(int, input().split())
     graph.append((node1,node2,cost))#모든 정보에 대해 저장해야되므로 그대로 저장
-print(graph)
+# print(graph)
 def Floyd_warshall(n,graph):
     dist=[[INF] *(n+1) for _ in range(n+1)] #기본 노드 초기화
-    for i in range(1,node+1):
-        dist[i][i]=0
+    # for i in range(1,node+1):
+    #     dist[i][i]=0
     for n1,n2,c1 in graph:
         if dist[n1][n2]>c1:#이게 중요한 이유! ==>3중 for문 돌기 전에 최소값 위주로 넣어줘야된다.
             dist[n1][n2]=c1
@@ -25,5 +25,12 @@ def Floyd_warshall(n,graph):
                 if k != j and dist[j][k] > dist[j][i] + dist[i][k]:
                     dist[j][k] = dist[j][i] + dist[i][k]
                 # dist[j][k]=min(dist[j][k],dist[j][i]+dist[i][k])
-    print(dist)
-Floyd_warshall(node,graph)
+    return dist
+check=Floyd_warshall(node,graph)
+for l in range(1,len(check)):
+    for z in range(1,len(check[l])):
+        if check[l][z]==INF:
+            print(0,end=" ")
+            continue
+        print(check[l][z],end=" ")
+    print()
