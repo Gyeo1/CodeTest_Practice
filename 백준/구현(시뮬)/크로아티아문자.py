@@ -9,3 +9,5 @@ print(a.index('lj'))
 start=0
 if 'lj' in a[start:]:
     print('yes')
+else:
+    continue
