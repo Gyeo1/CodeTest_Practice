@@ -10,7 +10,7 @@ for i in range(1,pocket_number+1):
     name=sys.stdin.readline().rstrip()
     dictonary[name]=str(i)
     dictonary[str(i)]=name
-list_value=list(dictonary.values())
+# list_value=list(dictonary.values())
 # print(dictonary)
 # print(list_value)
 # print(list_key,type(list_key[1]))
@@ -23,4 +23,7 @@ for _ in range(problem):
 #         print(list_value.index(check)+1) #인덱스 값은 0부터 시작하니깐 +1 해준다
 #         continue
 #     print(dictonary[int(check)])
-#     # print(list_value.index(check))                  #만약 문제가 포켓몬 이름을 물어보면
+#     # print(list_value.index(check))
+
+#내가 시간초과가 뜬 이유? ==>in 함수를 써서 그럼 list의 in은 시간 복잡도가 O(N)임 즉
+#내가 value값들을 리스트로 저장해 in으로 살피면 시간 복잡도.
