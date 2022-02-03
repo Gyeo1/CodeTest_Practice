@@ -8,7 +8,7 @@ from collections import deque
 
 test_case=int(input())
 def AC(order,check_list):
-    flag=1 #flag가 1이면 정상, 0이면 뒤집힌 상태
+    flag=1 #flag가 1이면 정상, 0이면 뒤집힌 상태, 문제 핵심임 시간 초과를 줄이기 위한 flag
     for i in order:
         if i=='D':
             if check_list: #리스트에 내용이 있다면
@@ -45,4 +45,5 @@ for _ in range(test_case):
     check=AC(request, deq1)
     if check != False:#error가 아닐시 문자열 출력
         print("["+",".join(check)+"]") #,를 기준으로 check의 값들을 붙여준다.
+        #틀렸던 이유가 [1,2,3,4]이렇게 붙어서 나와야 됐는데 [1, 2, 3, 4]로 나와서였음.
 
