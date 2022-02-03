@@ -44,5 +44,5 @@ for _ in range(test_case):
     deq1.extend(re.findall(r'[\d]+',list_1)) #숫자만 빼서 deque에 넣어준다
     check=AC(request, deq1)
     if check != False:#error가 아닐시 문자열 출력
-        print("["+",".join(check)+"]")
+        print("["+",".join(check)+"]") #,를 기준으로 check의 값들을 붙여준다.
 
