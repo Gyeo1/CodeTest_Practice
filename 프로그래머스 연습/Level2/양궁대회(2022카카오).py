@@ -14,16 +14,18 @@ def solution(n, info):
     for i in range(len(info)):
         check = [0 for _ in range(len(info))]
         for j in range(i, len(info)):
+            print(check)
             if sum(check) + info[j] + 1 <= n:
                 check[j] = info[j] + 1
-
-            elif check_win(info, check):
+                continue
+            if check_win(info, check):
+                print("최대값 찾음",check)
                 answer=check[:]
-
                 check[j - 1] = 0
                 if sum(check) + info[j] + 1 <= n:
                     check[j] = info[j] + 1
-        # print(check)
+        #문제가 뭐냐? ==>첫번째 최대 값은 찾는데 그 이후가 문제임.
+
     return answer
 
 def check_win(l1,l2):
@@ -45,8 +47,8 @@ def check_win(l1,l2):
 
 
 
-n=5
-info=[2,1,1,1,0,0,0,0,0,0,0]	#10점부터 0점까지 맞춘횟수임.
+n=9
+info=[0,0,1,2,0,1,1,1,1,1,1]	#10점부터 0점까지 맞춘횟수임.
 print(solution(n,info))
 
 
