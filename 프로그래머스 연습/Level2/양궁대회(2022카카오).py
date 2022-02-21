@@ -29,7 +29,7 @@ def dfs(n, info, k, apeach, lion, temp):
 
         else:                                   #어피치를 이기기 위한 화살 수가 부족하면 다음으로 넘기기
 
-            if i == 10 :                    #만약 i==0이면 끝이므로 dfs0을 실시 0은 점수 확인이다.
+            if i == 10 :
                 temp[i] = n
                 dfs(0, info, i + 1, apeach, lion, temp)
                 temp[i] = 0
@@ -51,6 +51,6 @@ def solution(n, info):
         answer = [-1]
     return answer
 
-n=5
-info=[2,1,1,1,0,0,0,0,0,0,0]
+n=10
+info=[0,0,0,0,0,0,0,0,3,4,3]
 print(solution(n,info))
