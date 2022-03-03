@@ -29,4 +29,5 @@ def solution(scoville, K):
 scoville=[1,1]
 K=7
 
+
 print(solution(scoville,K))
