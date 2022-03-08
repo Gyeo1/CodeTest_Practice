@@ -6,7 +6,6 @@ import heapq, math
 
 
 def solution(jobs):
-
     check=[]
     count=0
     pre_point= -1
