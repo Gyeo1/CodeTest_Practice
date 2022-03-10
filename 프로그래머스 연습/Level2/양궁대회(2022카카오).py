@@ -5,7 +5,6 @@ def dfs(n, info, k, apeach, lion, temp):
         if lion - apeach > max_val: #점수차가 max_val보다 크면 answer에 정답 갱신
             max_val = lion - apeach
             answer = temp[:]
-
         elif lion - apeach == max_val and max_val != 0: #점수차가 max_val이랑 같으면서 max_val이 0이 아니면
             for i in range(10, -1, -1):
                 if temp[i] > answer[i]:
@@ -14,7 +13,6 @@ def dfs(n, info, k, apeach, lion, temp):
                 elif temp[i] < answer[i]:
                     break
         return
-
     for i in range(k, 11):
 
         if n > info[i]:                         #남은 화살 수가 현재 apaech의 점수를 이길 수 있을 정도면?
@@ -35,7 +33,6 @@ def dfs(n, info, k, apeach, lion, temp):
                 temp[i] = 0
             else:#남은 화살수를 그대로 주고 i+1시킨 값을 보낸다.
                 dfs(n, info, i + 1, apeach, lion, temp)
-
 
 def solution(n, info):
     global max_val, answer

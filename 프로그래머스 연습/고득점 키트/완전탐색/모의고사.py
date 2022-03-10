@@ -10,11 +10,10 @@ def solution(answers):
     len_ans=len(answers)
     for i in range(len(answers)):
         for j in range(len(people)):
-            if answers[i]==people[j][i%len_people[j]]:
+            if answers[i]==people[j][i%len_people[j]]: # 나머지 연산을 통해 사람의 패턴 길이의 반복대로
                 check[j]+=1
 
     max_val=max(check)
-
     for i in range(len(check)):
         if check[i]==max_val:
             answer.append(i+1)
