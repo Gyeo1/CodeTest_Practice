@@ -5,28 +5,16 @@
 #2) N번집은 N-1 집 색과 달라야됨
 #3) i 번집은 i-1,i+1 집의 색과 달라야된다.
 
-n=int(input())
+N=int(input())
+houses=[]
+check=[[0,0,0] for _ in range(N)]
+for _ in range(N):
+    houses.append(list(map(int,input().split())))
+check[0]=houses[0]
+for i in range(1,N):
+    #1부터는 각각 R을 골랐을때 이전의 B,G중 최소값을 선택하는 방식으로 진행한다
+    check[i][0]=houses[i][0]+min(check[i-1][1],check[i-1][2])
+    check[i][1]=houses[i][1]+min(check[i-1][0],check[i-1][2])
+    check[i][2]=houses[i][2]+min(check[i-1][1],check[i-1][0])
 
-check=[0 for _ in range(n)]
-r=[]
-g=[]
-b=[]
-houses=[[] for _ in range(n)]
-for i in range(n): # 1~n까지의 집이 R/G/B로 칠할때 드는 비용이다.
-    houses[i]=list(map(int,input().split()))
-    r.append(houses[i][0])
-    g.append(houses[i][1])
-    b.append(houses[i][2])
-    #r기준으로 잡고 g,b 최소값의 합
-check[0]=min(r[0]+min(g[1],b[1]),g[0]+min(r[1],b[1]), b[0]+min(r[1],b[1]))
-print(r,g,b)
-# check[1]=min(r[1]+min(g[0],b[0])+min(g[2],b[2]),
-#              g[1]+min(r[0],b[0])+min(r[2],b[2]),
-#              b[1]+min(r[0],g[0])+min(r[2],g[2]))
-for i in range(1,n):
-    #각 색별로 최소값을 구하는건 맞았는데 구현을 실수했다.
-    houses[i][0] = min(houses[i-1][1] , houses[i-1][2])+houses[i][0]
-    houses[i][1] = min(houses[i - 1][0], houses[i - 1][2]) + houses[i][1]
-    houses[i][2] = min(houses[i - 1][0], houses[i - 1][1]) + houses[i][2]
-
-print(houses)
+print(min(check[N-1]))
